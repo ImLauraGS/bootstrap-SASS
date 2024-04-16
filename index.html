@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="container p-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-light m-5">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">
@@ -28,31 +28,75 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                   <li class="nav-item ">
-                    <button type="button" class="btn btn-secondary px-4 text-white">Login</button>
+                    <button type="button" class="btn btn-secondary px-4 text-white shadow">Login</button>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-    <main>
-        <div class="container-fluid m-5">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-sm-6 px-5">
+    <main class="">
+        <div class="container-fluid position-relative p-4">
+            <div class="bg-primary rounded-start-pill position-absolute top-40 end-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+            <div class="row d-flex justify-content-center align-items-center px-lg-0 px-0">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
                     <h1>A Simple Bookmark Manager</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti odit excepturi sequi, cum nesciunt a repellat velit, saepe provident labore voluptatibus similique tempora dolores ullam. Suscipit repellendus laboriosam quis.</p>
                     <div>
-                        <button type="button" class="btn btn-primary px-4 text-white">Get it on Chrome</button>
-                        <button type="button" class="btn btn-light px-4 text-white">Get it on Firefox</button>
+                        <button type="button" class="btn btn-primary px-4 text-white shadow" >Get it on Chrome</button>
+                        <button type="button" class="btn btn-light px-4 text-black shadow">Get it on Firefox</button>
                     </div>
-
                 </div>
-                <div class="col-sm-6 position-relative">
-                    <img src="./assets/Imagenes/illustration-hero.svg" alt="" class="img-fluid" width="492">
-                    <div class="bg-primary rounded-start-pill position-absolute top-30 end-0" style="height: 300px; width: 500px; z-index: -1;"></div>
+                <div class="col-sm-5">
+                    <img src="./assets/Imagenes/illustration-hero.svg" alt="" class="img-fluid" width="600">
                 </div>
+                <div class="col-sm-1"></div>
               </div>
         </div>
+        <section class="container-fluid p-4 position-relative my-5" id="features">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5">
+                    <h2 class="h1 fw-semibold text-customdark pb-3">Features</h2>
+                    <p class="fs-text text-custommuted">Our aim is to make it quick and easy for you to access
+                        your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid d-flex flex-column my-4 gap-4 container-fluid p-4 align-items-center">
+                <ul class="nav nav-tabs fs-text justify-content-center flex-column flex-md-row justify-content-md-between  " id="myTab" role="tablist">
+                    <li class="nav-item pb-md-0 bb-tab bt-tab" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 active" id="first-tab" data-bs-toggle="tab" data-bs-target="#bookmark" type="button" role="tab" aria-controls="first" aria-selected="true">Simple Bookmarking</button>
+                    </li>
+                    <li class="nav-item pb-md-0 bb-tab" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false" tabindex="-1">Speedy Searching</button>
+                    </li>
+                    <li class="nav-item pb-md-0 bb-tab" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 " id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false" tabindex="-1">Easy Sharing</button>
+                    </li>
+                </ul>
+                <div class="tab-pane fade p-0 p-sm-2 active show" id="bookmark" role="tabpanel" aria-labelledby="first-tab">
+                    <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                        <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                        <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-first-tab">
+                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg" alt="Illustration Hero">
+                                <div class="blue-shape-reverse position-absolute"></div>
+                            </div>
+                            <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                <h1 class="fw-semibold pb-2 fs-title">Bookmark in one click</h1>
+                                <p class="text-custommuted pb-2 fs-text"> Organize your bookmarks however
+                                    you like. Our simple drag-and-drop interface gives you complete control over how you
+                                    manage your favourite sites.</p>
+                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
+                                    <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
        
     </main>
     <footer>
