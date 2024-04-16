@@ -3,31 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-
-        </div>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light m-5">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/Imagenes/logo-bookmark.svg" alt="" width="" height="" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item ">
+                    <button type="button" class="btn btn-secondary px-4 text-white">Login</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="container-fluid m-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-6 px-5">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti odit excepturi sequi, cum nesciunt a repellat velit, saepe provident labore voluptatibus similique tempora dolores ullam. Suscipit repellendus laboriosam quis.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary px-4 text-white">Get it on Chrome</button>
+                        <button type="button" class="btn btn-light px-4 text-white">Get it on Firefox</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 position-relative">
+                    <img src="./assets/Imagenes/illustration-hero.svg" alt="" class="img-fluid" width="492">
+                    <div class="bg-primary rounded-start-pill position-absolute top-30 end-0" style="height: 300px; width: 500px; z-index: -1;"></div>
+                </div>
+              </div>
+        </div>
+       
     </main>
     <footer>
 
     </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
