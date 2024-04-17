@@ -35,7 +35,7 @@
             </div>
           </nav>
     </header>
-    <main class="">
+    <main>
         <div class="container-fluid position-relative p-4">
             <div class="bg-primary rounded-start-pill position-absolute top-40 end-0" style="height: 250px; width: 500px; z-index: -1;"></div>
             <div class="row d-flex justify-content-center align-items-center px-lg-0 px-0">
@@ -63,40 +63,79 @@
                     </p>
                 </div>
             </div>
-            <div class="container-fluid d-flex flex-column my-4 gap-4 container-fluid p-4 align-items-center">
-                <ul class="nav nav-tabs fs-text justify-content-center flex-column flex-md-row justify-content-md-between  " id="myTab" role="tablist">
-                    <li class="nav-item pb-md-0 bb-tab bt-tab" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 active" id="first-tab" data-bs-toggle="tab" data-bs-target="#bookmark" type="button" role="tab" aria-controls="first" aria-selected="true">Simple Bookmarking</button>
+            <div class="container-fluid d-flex flex-column my-4 gap-4 p-4 align-items-center">
+                <ul class="nav nav-tabs fs-text justify-content-center flex-column flex-md-row justify-content-md-between" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 active" id="first-tab" data-bs-toggle="tab" data-bs-target="#bookmark" type="button" role="tab" aria-controls="bookmark" aria-selected="true">Simple Bookmarking</button>
                     </li>
-                    <li class="nav-item pb-md-0 bb-tab" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false" tabindex="-1">Speedy Searching</button>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="second-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
                     </li>
-                    <li class="nav-item pb-md-0 bb-tab" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 " id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false" tabindex="-1">Easy Sharing</button>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="third-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy Sharing</button>
                     </li>
                 </ul>
-                <div class="tab-pane fade p-0 p-sm-2 active show" id="bookmark" role="tabpanel" aria-labelledby="first-tab">
-                    <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
-                        <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
-                        <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
-                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-first-tab">
-                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg" alt="Illustration Hero">
-                                <div class="blue-shape-reverse position-absolute"></div>
+                            
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="bookmark" role="tabpanel" aria-labelledby="first-tab">
+                        <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                                <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
+                                    <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg" alt="Illustration Hero">
+                                    <div class="blue-shape-reverse position-absolute"></div>
+                                </div>
+                                <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                    <h1 class="fw-semibold pb-2 fs-title">Bookmark in one click</h1>
+                                    <p class="text-custommuted pb-2 fs-text"> Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
+                                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
-                                <h1 class="fw-semibold pb-2 fs-title">Bookmark in one click</h1>
-                                <p class="text-custommuted pb-2 fs-text"> Organize your bookmarks however
-                                    you like. Our simple drag-and-drop interface gives you complete control over how you
-                                    manage your favourite sites.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
-                                    <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                        </div>
+                    </div>
+            
+                    <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="second-tab">
+                        <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                                <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-first-tab">
+                                    <img class="img-fluid" src="assets/imagenes/illustration-features-tab-2.svg" alt="Illustration Hero">
+                                    <div class="blue-shape-reverse position-absolute"></div>
+                                </div>
+                                <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                    <h1 class="fw-semibold pb-2 fs-title">Intelligent search</h1>
+                                    <p class="text-custommuted pb-2 fs-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
+                                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="third-tab">
+                        <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                                <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-first-tab">
+                                    <img class="img-fluid" src="assets/imagenes/illustration-features-tab-3.svg" alt="Illustration Hero">
+                                    <div class="blue-shape-reverse position-absolute"></div>
+                                </div>
+                                <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                    <h1 class="fw-semibold pb-2 fs-title">Share your bookmarks</h1>
+                                    <p class="text-custommuted pb-2 fs-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
+                                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            
        
     </main>
     <footer>
