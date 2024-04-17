@@ -33,7 +33,22 @@ $spacers: (
   9: $spacer * 7,
 );
 
-$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+.card-custom {
+    border: none !important;
+    border-radius: 10px !important;
+    height: fit-content !important;
+  }
+.card-shadow{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dots{
+    width:max-content;
+    object-fit: cover;
+    overflow: hidden
+}
+
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
 
