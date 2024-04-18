@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header class="container p-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-light m-5">
             <div class="container-fluid ">
@@ -16,16 +17,16 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
                 <ul class="navbar-nav gap-5">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#features">Features</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item ">
                     <button type="button" class="btn btn-secondary px-4 text-white shadow">Login</button>
@@ -36,24 +37,25 @@
           </nav>
     </header>
     <main>
-        <div class="container-fluid position-relative p-4">
-            <div class="bg-primary rounded-start-pill position-absolute top-40 end-0" style="height: 250px; width: 500px; z-index: -1;"></div>
-            <div class="row d-flex justify-content-center align-items-center px-lg-0 px-0">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <h1>A Simple Bookmark Manager</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti odit excepturi sequi, cum nesciunt a repellat velit, saepe provident labore voluptatibus similique tempora dolores ullam. Suscipit repellendus laboriosam quis.</p>
-                    <div>
+        <section class="container-fluid position-relative">
+            <div class="form-blue bg-primary rounded-start-pill position-absolute top-40 end-0"></div>
+            <div class="container p-4">
+                <div class="row d-flex justify-content-center align-items-center px-lg-0 px-0">
+                <div class="col-lg-4 order-lg-1 order-2 text-center text-lg-start pb-5">
+                    <h1 class="pb-3">A Simple Bookmark Manager</h1>
+                    <p class="pb-3 fs-text mx-lg-0">A clean and simple interface to organize your favourite websites.Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start pb-3">
                         <button type="button" class="btn btn-primary px-4 text-white shadow" >Get it on Chrome</button>
                         <button type="button" class="btn btn-light px-4 text-black shadow">Get it on Firefox</button>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <img src="./assets/Imagenes/illustration-hero.svg" alt="" class="img-fluid" width="600">
+                <div class="col-lg-7 order-lg-2 order-1 mb-5 d-flex justify-content-end px-0">
+                    <img class="img-fluid" src="assets/imagenes/illustration-hero.svg" alt="Illustration Hero">
                 </div>
-                <div class="col-sm-1"></div>
-              </div>
-        </div>
+                </div>
+            </div>
+        </section>
+            
         <section class="container-fluid p-4 position-relative my-5" id="features">
             <div class="row">
                 <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5">
@@ -66,13 +68,13 @@
             <div class="container-fluid d-flex flex-column my-4 gap-4 p-4 align-items-center">
                 <ul class="nav nav-tabs fs-text justify-content-center flex-column flex-md-row justify-content-md-between" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 active" id="first-tab" data-bs-toggle="tab" data-bs-target="#bookmark" type="button" role="tab" aria-controls="bookmark" aria-selected="true">Simple Bookmarking</button>
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#bookmark" type="button" role="tab" aria-controls="bookmark" aria-selected="true">Simple Bookmarking</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="second-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="third-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy Sharing</button>
+                        <button class="nav-link ls-wide pb-4 px-0 px-md-5 nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy Sharing</button>
                     </li>
                 </ul>
                             
@@ -135,41 +137,51 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
             <section class="container-fluid mb-5" id="pricing">
                 <div class="row mb-5 gap-5 gap-lg-2">
-                    <div class="col-12 col-sm-10 col-lg-8 text-center mx-auto px-4 px-sm-2 px-lg-5">
+                    <div class="col-12 col-sm-10 text-center mx-auto px-4 px-sm-2 px-lg-5">
                         <h2 class="h1 pb-3">Download the extension</h2>
                         <p class="">We’ve got more browsers in the pipeline. Please do let us know if
                             you’ve got a favourite you’d like us to prioritize.
                         </p>
-                        <div class="container-fluid d-flex gap-5 mt-5">
-                            <div class="card card-shadow align-items-center pt-5 px-4 card-custom" style="width: 18rem;">
-                                <img src="./assets/Imagenes/logo-chrome.svg"  style="width: 6rem;"  class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Add to Chrome</h5>
-                                  <p class="card-text">Minimum version 62.</p>
-                                  <img src="assets/imagenes/bg-dots.svg" class="pb-4 dots" alt="dots" title="dots">
-                                  <a href="#" class="btn btn-primary">Add & install Extension</a>
+                        <div class="container-fluid mt-5">
+                            <div class="row row-cols-1 row-cols-lg-4 justify-content-center gap-4">
+                                <div class="col">
+                                    <div class="card card-shadow align-items-center pt-5 card-custom">
+                                        <img src="./assets/Imagenes/logo-chrome.svg"  style="width: 6rem;"  class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Add to Chrome</h5>
+                                            <p class="card-text">Minimum version 62.</p>
+                                            <img src="assets/imagenes/bg-dots.svg" class="dots-card pb-4" alt="dots">
+                                            <a href="#" class="btn btn-primary">Add & install Extension</a>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                              <div class="card card-shadow align-items-center pt-5 px-4 card-custom mt-4" style="width: 18rem;">
-                                <img src="./assets/Imagenes/logo-firefox.svg" class="card-img-top" style="width: 6rem;" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Add to Firefox</h5>
-                                  <p class="card-text">Minimum version 56</p>
-                                  <img src="assets/imagenes/bg-dots.svg" class="pb-4 dots" alt="dots" title="dots">
-                                  <a href="#" class="btn btn-primary">Add & install Extension</a>
+                                <div class="col mt-4">
+                                    <div class="card card-shadow align-items-center pt-5 card-custom">
+                                        <img src="./assets/Imagenes/logo-firefox.svg" class="card-img-top" style="width: 6rem;" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Add to Firefox</h5>
+                                            <p class="card-text">Minimum version 56</p>
+                                            <img src="assets/imagenes/bg-dots.svg" class="pb-4 dots" alt="dots" title="dots">
+                                            <a href="#" class="btn btn-primary">Add & install Extension</a>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                              <div class="card card-shadow align-items-center pt-5 px-4 card-custom mt-6" style="width: 18rem;">
-                                <img src="./assets/Imagenes/logo-opera.svg" style="width: 6rem;"  class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Add to Opera</h5>
-                                  <p class="card-text">Minimum version 46</p>
-                                  <img src="assets/imagenes/bg-dots.svg" class="pb-4 dots" alt="dots" title="dots">
-                                  <a href="#" class="btn btn-primary">Add & install Extension</a>
+                                <div class="col mt-6">
+                                    <div class="card card-shadow align-items-center pt-5 card-custom">
+                                        <img src="./assets/Imagenes/logo-opera.svg" style="width: 6rem;"  class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Add to Opera</h5>
+                                            <p class="card-text">Minimum version 46</p>
+                                            <img src="assets/imagenes/bg-dots.svg" class="pb-4 dots" alt="dots" title="dots">
+                                            <a href="#" class="btn btn-primary">Add & install Extension</a>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
