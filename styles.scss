@@ -43,15 +43,36 @@ body{
     height: fit-content !important;
 
   }
+
 .card-shadow{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
+
 .form-blue{
   height: 15rem; 
   width: 50rem; 
   z-index: -1;
   }
 
+  .accordion-item {
+    border: none !important;
+    border-radius: 0 !important;
+    border-top: 1px solid #ababab !important;
+  
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom: 1px solid #ababab !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .accordion-button::after {
+    background-image: url(../assets/imagenes/icon-arrow.svg) !important;
+  }
 
 
 @media (max-width: 575.98px) {
