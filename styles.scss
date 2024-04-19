@@ -41,46 +41,102 @@ body{
     border: none !important;
     border-radius: 10px !important;
     height: fit-content !important;
-
-  }
+}
 
 .card-shadow{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.form-blue{
-  height: 15rem; 
-  width: 50rem; 
-  z-index: -1;
-  }
+.nav-tabs .nav-link{
+  border: none !important;
+}
 
-  .accordion-item {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: none !important;
+  border: none !important;
+  border-bottom: 3px solid #FA5959 !important;
+  width: fit-content;
+}
+
+.nav-link {
+  color: #85858d !important;
+
+  &:focus {
     border: none !important;
-    border-radius: 0 !important;
-    border-top: 1px solid #ababab !important;
+  }
+}
+
+.nav-tabs .nav-link:hover {
+  border: none !important;
+}
+
+.form-blue{
+  height: 20rem; 
+  width: 50rem;
+  top: 13rem; 
+  z-index: -1;
+}
+.form-blue2{
+  height: 21rem !important; 
+  width: 45rem !important;
+  z-index: -1;
+  bottom: 3rem !important;
+}
+
+
+.accordion-item {
+  border: none !important;
+  border-radius: 0 !important;
+  border-top: 1px solid #ababab !important;
   
-  }
+}
 
-  .accordion-item:last-of-type {
-    border-bottom: 1px solid #ababab !important;
-  }
+.accordion-item:last-of-type {
+  border-bottom: 1px solid #ababab !important;
+}
 
-  .accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
-  .accordion-button::after {
-    background-image: url(../assets/imagenes/icon-arrow.svg) !important;
-  }
+.accordion-button::after {
+  background-image: url(../assets/imagenes/icon-arrow.svg) !important;
+}
 
+.footer{
+  background-color: #262b48;
+  color: white;  
+}
+.invalid-feedback {
+  background-color: #fb5859;
+  color: white !important;
+  text-align: left;
+  padding: 0.3rem;
+  margin-top: -3px !important;
+  border-radius: 0 0 5px 5px;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: url(../assets/imagenes/icon-error.svg) !important;
+}
 
 @media (max-width: 575.98px) {
-
-
+  .form-blue{
+    height: 12rem !important; 
+    width: 70% !important; 
+    z-index: -1;
+    top: 5rem !important;
+  }
+  .form-blue2{
+    height: 12rem !important; 
+    width: 70% !important; 
+    z-index: -1;
+    bottom: 20rem !important;
+  }
  }
-
-
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 

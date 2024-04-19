@@ -38,7 +38,7 @@
     </header>
     <main>
         <section class="container-fluid position-relative">
-            <div class="form-blue bg-primary rounded-start-pill position-absolute top-40 end-0"></div>
+            <div class="form-blue bg-primary rounded-start-pill position-absolute end-0"></div>
             <div class="container p-4">
                 <div class="row d-flex justify-content-center align-items-center px-lg-0 px-0">
                 <div class="col-lg-4 order-lg-1 order-2 text-center text-lg-start pb-5">
@@ -81,11 +81,10 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="bookmark" role="tabpanel" aria-labelledby="first-tab">
                         <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
-                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="bg-primary form-blue2 rounded-end-pill position-absolute start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
                             <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
                                 <div class="col-lg-8 mb-5 d-flex justify-content-start">
                                     <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg" alt="Illustration Hero">
-                                    <div class="blue-shape-reverse position-absolute"></div>
                                 </div>
                                 <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
                                     <h1 class="fw-semibold pb-2 fs-title">Bookmark in one click</h1>
@@ -100,11 +99,10 @@
             
                     <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="second-tab">
                         <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
-                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="form-blue2 bg-primary rounded-end-pill position-absolute start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
                             <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
                                 <div class="col-lg-8 mb-5 d-flex justify-content-start ps-custom-first-tab">
                                     <img class="img-fluid" src="assets/imagenes/illustration-features-tab-2.svg" alt="Illustration Hero">
-                                    <div class="blue-shape-reverse position-absolute"></div>
                                 </div>
                                 <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
                                     <h1 class="fw-semibold pb-2 fs-title">Intelligent search</h1>
@@ -119,11 +117,10 @@
             
                     <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="third-tab">
                         <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
-                            <div class="bg-primary rounded-end-pill position-absolute bottom-0 start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
+                            <div class="bg-primary form-blue2 rounded-end-pill position-absolute start-0" style="height: 250px; width: 500px; z-index: -1;"></div>
                             <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
                                 <div class="col-lg-8 mb-5 d-flex justify-content-start ps-custom-first-tab">
                                     <img class="img-fluid" src="assets/imagenes/illustration-features-tab-3.svg" alt="Illustration Hero">
-                                    <div class="blue-shape-reverse position-absolute"></div>
                                 </div>
                                 <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
                                     <h1 class="fw-semibold pb-2 fs-title">Share your bookmarks</h1>
@@ -288,8 +285,67 @@
        
     </main>
     <footer>
-
+        <section class="container-fluid p-4 position-relative bg-primary" id="contact">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5 py-3">
+                    <small class="text-uppercase text-white">
+                        35,000+ already joined
+                    </small>
+                    <h3 class="py-3 text-white">
+                        Stay up-to-date with what we’re doing
+                    </h3>
+                </div>
+             
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-10 col-lg-5 text-center">
+                            <form class="row g-3 justify-content-center needs-validation" novalidate>
+                                <div class="col-12 col-lg-8">
+                                    <input type="email" class="form-control" id="validationEmail" placeholder="Email"
+                                           aria-describedby="validationEmailFeedback" required>
+                                    <div id="validationEmailFeedback" class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-12 col-lg-auto">
+                                    <button type="submit" class="btn btn-secondary text-white text-capitalize">Contact us</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="footer">
+            <div class="container d-flex justify-content-center justify-sm-content-between align-items-center py-3 flex-column flex-sm-row">
+                <div class="col-auto col-lg-2 py-3 py-sm-0 pb-sm-0">
+                    <a class="navbar-brand" href="#"><img src="assets/imagenes/logo-bookmark copy.svg" alt="Logo Bookmark"
+                            title="Logo Bookmark"></a>
+                </div>
+             
+                <div class="col-8 text-uppercase ">
+                    <ul class="navbar-nav d-flex flex-column mb-3 mb-sm-0 align-items-center flex-sm-row mx-sm-3">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-2 d-flex justify-content-center align-items-center">
+                    <a class="nav-link text-white mx-2" href="#"><img src="/assets/Imagenes/icon-facebook.svg" alt=""></a>
+                    <a class="nav-link text-white mx-2" href="#"><img src="/assets/Imagenes/icon-twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="/script.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
