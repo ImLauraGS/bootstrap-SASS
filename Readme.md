@@ -11,8 +11,7 @@ El objetivo de este proyecto es crear una página de inicio utilizando Bootstrap
 ### 📖 Mockups
 
 ![alt text](assets/image.png)
-![alt text](assets/image-1.png)![alt text](assets/image-2.png)
-
+![alt text](assets/image-1.png)
 ## 💻 Tecnologias usadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
@@ -54,7 +53,6 @@ The objective of this project is to create a landing page using Bootstrap and SA
 
 ![Mockup 1](image.png)
 ![Mockup 2](image-1.png)
-![Mockup 3](image-2.png)
 
 ## 💻 Technologies Used
 
