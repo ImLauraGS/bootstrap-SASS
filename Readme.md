@@ -10,8 +10,8 @@ El objetivo de este proyecto es crear una página de inicio utilizando Bootstrap
 
 ### 📖 Mockups
 
-![alt text](image.png)
-![alt text](image-1.png)![alt text](image-2.png)
+![alt text](assets/image.png)
+![alt text](assets/image-1.png)![alt text](assets/image-2.png)
 
 ## 💻 Tecnologias usadas
 
